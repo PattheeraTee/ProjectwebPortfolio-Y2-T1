@@ -1,0 +1,26 @@
+div{
+    float: left;
+    border: 10px solid lightgray;
+    margin: 10px 5px;
+    padding: 10px;
+    padding-bottom: 30px;
+    line-height: 1.9em;
+    height: 7em;
+    background-color: rgb(243, 249, 255);
+    box-sizing: border-box;
+    padding-right:30px;
+}
+div h2,div p{
+    margin: 0px;
+}
+div h2{
+    font-family: sans-serif;
+}
+.box-3 h2{
+    font-size: 30px;
+    padding-right:50px;
+    padding-top: 5px;
+}
+.box-3{
+    border-color: #bbd1d2;
+}

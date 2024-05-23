@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .require::after{
+            content: "*";
+            color: red;
+        }
+        form{
+            display: flex;
+        }
+        h3{
+            margin: 0px;
+        }
+        .position{
+            background-color: lightgoldenrodyellow;
+        }
+        .box-left{
+            width: 400px;
+            margin-right: 2em;
+            margin-top: 1em;
+        }
+        .box-right{
+            width: 500px;
+        }
+        legend{
+            font-size: 2em;
+        }
+        label{
+            font-weight: bold;
+        }
+        .inf{
+            padding:0.75em 0.5em;
+        }
+        h3{
+            padding: 1.5em 0.5em 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Employee Application</legend>
+        <form action="#" method="get">
+            <div class="box-left">
+                <div class="position inf">
+                    <label for="choose" class="require">Which position are you applying for?</label><br>
+                    <select name="choose" required>
+                        <option value="" hidden>Choose Position</option>
+                        <option value="frontend">Front End Developer</option>
+                    </select>
+                </div>
+                <div class="inf">
+                    <label for="relocate" class="require">Are you willing to relocate?</label><br>
+                    <input type="radio" name="relocate" value="Y" required> Yes <br>
+                    <input type="radio" name="relocate" value="N" required> No
+                </div>
+                <div class="inf">
+                    <label for="date" class="require">When you can start?</label><br>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="inf">
+                    <label for="web">Portfolio Web site</label><br>
+                    <input type="url" name="web" value="http://">
+                </div>
+                <div class="inf">
+                    <label for="date">Attach a Copy of Your Resume</label><br>
+                    <input type="file" name="file" multiple accept="image/png,image.jpeg">
+                </div>
+            </div>
+            <div class="box-right">
+                <h3>Your Contact Information</h3>
+                <div class="inf">
+                    <label for="name" class="require">Name</label> <br>
+                    <input type="text" name="fname" placeholder="firstname" required>
+                    <input type="text" name="lname" placeholder="lastname" required>
+                </div>
+                <div class="inf">
+                    <label for="email" class="require">Email Address</label> <br>
+                    <input type="email" name="email" required >
+                </div>
+                <div class="inf">
+                    <label for="phone" class="require">Phone</label> <br>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="inf">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

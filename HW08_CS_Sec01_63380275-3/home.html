@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">My Life</h1>
+        <nav class="menu">
+            <ul>
+                <li id="p-home"><a href="./home.html">Home</a></li>
+                <li id="p-blog"><a href="./blog.html">My Blog</a></li>
+                <li id="p-about"><a href="./about.html">About me</a></li>
+                <li id="p-contact"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="head">Pattheera's Life</p>
+    </div>
+    <div class="content">
+        <div class="home-blog">
+            <h2>My blog</h2>
+            <article class="post1">
+                <div class="image-post">
+                    <img src="./photo/taeyeon.jpeg" alt="taeyeon photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite singer</h3>
+                    <p>Kim Tae-yeon born 9 March 1989, known mononymously as Taeyeon, is a South Korean singer. She debuted as a member of girl group Girls' Generation in August 2007, which went on to become one of the best-selling artists in South Korea and one of the most popular K-pop groups worldwide. </p>
+                </div>
+            </article>
+            <article class="post2">
+                <div class="image-post">
+                    <img src="./photo/unitl_i_found_u.webp" alt="until i found you photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite song</h3>
+                    <p>Until I Found You is a song by American singer-songwriter Stephen Sanchez. It was released on 1 September 2021 as the lead single from Sanchez's second extended play Easy on My Eyes. Written by Sanchez and produced by Ian Fitchuk and Konrad Snyder, the song peaked at number 23 on the Billboard Hot 100, number 8 on the Australian ARIA chart and at number 14 on the UK Singles Chart.</p>
+                </div>
+            </article>
+            <article class="post3">
+                <div class="image-post">
+                    <img src="./photo/howls_moving_castle.webp" alt="howl's moving castle photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite anime</h3>
+                    <p>Howl's Moving Castle is a 2004 Japanese animated fantasy film written and directed by Hayao Miyazaki.It is loosely based on the 1986 novel of the same name by British author Diana Wynne Jones.The film is set in a fictional kingdom where both magic and early twentieth-century technology are prevalent, against the backdrop of a war with another kingdom. </p>
+                </div>
+            </article>
+            <button class="btn" onclick="goToBlogPage()">All Posts</button>
+        </div>
+        <div class="home-about">
+            <h2>About me</h2>
+            <img src="./photo/profile.jpeg" alt="profile">
+            <p>Hi, everyone! Welcome to my blog ! My name is Pattheera Teerarujinont and I am a college student studying at the College of Computing Khon Kaen University.I'm 19 years old. I'm from Thailand. I love samoyed, basketball and listening to music.</p>
+            <button class="btn" onclick="goToAboutPage()">Read ></button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+    <script>
+        function goToAboutPage() {
+            var url1 = "about.html";
+            window.location.href = url1;
+        }
+        function goToBlogPage() {
+            var url2 = "blog.html";
+            window.location.href = url2;
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1>Web Design </h1>
+        <span> | </span>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+        </ul>   
+   </header>
+   <div class="section">
+        <div id="blog-head">
+            <p>Blog</p>
+            <div class="line-head"></div>
+        </div>
+        <article>
+            <div class="title-img">
+                <img src="./photo/9-web-design-mistakes-that-will-kill-your-conversions.png" alt="photo 9 web design mistakes">
+            </div>
+            <div class="title">
+                <ul>
+                    <li>Jabed Hasan</li>
+                    <li> - </li>
+                    <li>3/09/2016</li>
+                </ul>
+                <h2>9 Web Design Mistakes That'll Kill Your Conversions</h2>
+                <p>Owning a website is obviously exciting and every website has a goal, whether it is to get more sales, 
+                    subscribers or downloads. The ultimate goal is to get more conversions.
+                    But, if your website design is not perfect then your conversion goal will not be achieved.
+
+                    The design of a website plays a big role when it comes to conversion rates. Yes, your sales message is significant, but if you can’t present it in an attractive way because of poor design, your message will never get read by your audience.
+                    
+                    If people don’t read your message then how would you expect that they will take your desired action?
+                    
+                    There are many website design mistakes that can kill your conversion goal. In this article, I will explain top nine web design mistakes you must avoid increasing your website conversion rate.</p>
+                
+                <button class="btn" onclick="goToBlogPage()">Read ></button>
+                <script>
+                    function goToBlogPage() {
+                        // สร้าง URL ของหน้า blog
+                        var url = "blog.html";
+                        // เปลี่ยนที่อยู่ไปยังหน้า blog
+                        window.location.href = url;
+                    }
+                </script>
+            </div>
+        </article>
+        <div class="line-end"></div>
+    </div>
+    <footer>
+        <h1 id="logo-footer">Web Design </h1>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+</html>

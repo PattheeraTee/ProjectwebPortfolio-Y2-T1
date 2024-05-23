@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(./font/AvenirLTStd-Book.otf);
+}
+@font-face {
+    font-family: 'Kanit';
+    src: url(./font/Kanit-Regular.ttf);
+}
+*{
+    font-family: 'Avenir','Kanit',sans-serif;
+    margin: 0em;
+    padding: 0em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    color: #032539;
+    box-sizing: border-box;
+}
+.logo h1{
+    font-size: 2em;
+}
+nav{
+    padding: 1.25em 7%;
+    min-width: 300px;
+}
+.head{
+    background:rgba(0,0,0,0.8) url(./photo/เรื่องน่ารู้เกี่ยวกับ-SEO-ในปี-2020.jpeg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size:cover;
+    padding: 10vh 0em;
+    min-width: 400px;
+}
+.head h2{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Kanit';
+}
+.container-r{
+    width: 30%;
+    max-width: max-content;
+    margin-top: 1%;
+    margin-left: 2%;
+    
+    height: fit-content;
+    font-size: 1.15em;
+}
+.container-r h3{
+    text-transform: uppercase;
+}
+h3.container-r-item{
+    border-bottom: 2px dashed #fa991c ;
+}
+.container-r-item {
+    padding: 0em 0.5em;
+}
+.container-r-item li{
+    margin: 0.5em -2.5em -0.5em;
+    padding: 0.5em 0em;
+}
+.container-l{
+    width: 55%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+}
+.container-l h2{
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0em 1em;
+    border-top: 2px solid #fa991c;
+    border-bottom: 2px solid #fa991c;
+    font-family: 'Kanit';
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+.container-l h3{
+    padding: 0.5em 0em;
+    text-transform: uppercase;
+}
+h3+p,h2+p{
+    text-indent: 1.5em;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0em;
+}
+.picture img{
+    box-shadow: 0px 0px 5px 2px darkgray;
+    border-radius: 10px;
+    width: 90%;
+}
+span a,ul li a{
+    text-decoration: none;
+    color: #1c768f;
+    word-wrap: break-word;
+}
+span a:hover,ul li a:hover{
+    color: #fa991c;
+    text-decoration: underline;
+}
+h3{
+    font-family: 'Kanit';
+    font-size: 1.35em;
+}
+ul{
+    margin: 0em 3.75em;
+}
+footer{
+    clear: both;
+    background-color: #032539;
+    text-align: center;
+    padding: 0.5em 0em;
+    min-width: 400px;
+}
+footer p{
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+.writer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(250, 153, 28,0.1);
+    padding: 1em 1.5em;
+    margin: 1.5em 0em 1em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px 2px darkgray;
+}
+.writer p,.writer h4{
+    margin-left: 3%;
+}
+h4{
+    font-family: 'Kanit';
+    font-size: 1.25em;
+    font-weight: 900;
+}
+.writer img{
+    border-radius: 50%;
+    width: 8%;
+    min-width: 75px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 1em;
+}
+.icon img{
+    width: 10%;
+}
+div.icon a,.icon p{
+    margin-left:1em;
+    text-decoration: none;
+    color: #1c768f;
+    word-wrap: break-word;
+}
+.icon a:hover,.icon p:hover{
+    color: #fa991c;
+}
+.content-seo{
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1em 0.5em 1em 0.5em;
+}
+.right-contact{
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1em 0.5em 1em 0.5em;
+    margin-top: 2em;
+}
+
+@media screen and (min-width:769px) and (max-width: 991px) {
+    .container-l{
+        width: 65%;
+        padding: 1em;
+    }
+    .container-r{
+        width: 25%;
+    }
+    .content-seo{
+        width: 100%;
+    }
+    .picture img{
+        width: 100%;
+    }
+    .contact{
+        display: flex;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column-reverse;
+    }
+    .container-l{
+        width: 100%;
+        padding: 1em;
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+    .container-l h2{
+        font-size: 1.5em;
+    }
+    h3.container-r-item{
+        margin: 0em 0.5em;
+    }
+    .container-r-item li{
+        margin: 0.5em -1em 0.5em;
+        padding: 0.25em 0em;
+    }
+    .container-r{
+        width: 100%;
+        padding: 1em 0em 0em;
+        font-size: 1em;
+        display: block;
+        margin: 1em auto;
+    }
+    .head h2{
+        font-size: 2em;
+    }
+    .picture img{
+        width: 95%;
+    }
+    h3{
+        font-size: 1.25em;
+    }
+} 

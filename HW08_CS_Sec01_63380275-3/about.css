@@ -1,0 +1,32 @@
+.contain{
+    display: flex;
+    margin: 5% 15%;
+    min-width: 600px;
+    background-color: #fcded9;
+    border-radius: 1.25em;
+}
+.contain img{
+    width: 35%;
+    min-width: 300px;
+    max-width: 50%;
+    height: 30%;
+    margin: 2em 3em 2em 2em;
+    box-shadow: 0em 0em 1em;
+}
+h3{
+    padding: 1em 0em;
+}
+.detail{
+    width: 65%;
+    padding: 1em 4em;
+}
+.detail p{
+    text-indent: 1.5em;
+}
+h2{
+    text-align: center;
+}
+nav.menu ul li#p-about a{
+    color: #bb5a3a;
+    font-weight: 600;
+}

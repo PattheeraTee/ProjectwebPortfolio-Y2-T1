@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Travel Blog</title>
+    <style>
+        @font-face {
+            font-family: 'Avenir';
+            src: url(./font/AvenirLTStd-Book.otf);
+        }
+        @font-face {
+            font-family: 'Sarabun';
+            src: url(./font/Sarabun-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'Kanit';
+            src: url(./font/Kanit-Regular.ttf);
+        }
+        *{
+            font-family: 'Avenir','Sarabun','Kanit',sans-serif;
+            line-height: 1.6em;
+            letter-spacing: 0.05em;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h3{
+            font-family: 'Kanit';
+            border-top: 2px solid #ff322e;
+            border-bottom: 2px solid #ff322e;
+        }
+        h5{
+            font-size: 1.5em;
+        }
+        .background{
+            /* กำหนดสีพื้นหลังเป็นสีดำทึบ 40% รูปภาพพื้นหลังเป็นภาพที่มีชื่อ "ภูชี้ฟ้า.webp" ที่อยู่ในโฟลเดอร์ "./photo"*/
+            background:rgba(0,0,0,0.4) url(./photo/ภูชี้ฟ้า.webp);
+            /* ให้พื้นหลังเป็นสีดำทึบขึ้นตามสัดส่วนของรูปภาพพื้นหลัง */
+            background-blend-mode: darken;
+            /* ให้รูปภาพพื้นหลังอยู่ตรงกลาง */
+            background-position: center;
+            /* รูปภาพพื้นหลังจะบีบขนาดให้พอดีกับกรอบ */
+            background-size:cover;
+        }
+        footer p{
+            padding: 0.5em 0em;
+        }
+        p,.refer a{
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+        li.refer a{
+            color: black;
+        }
+        .rf{
+            border-bottom: 2px solid lightgray;
+        }
+        /*เอาเมาส์ไปวางไว้เหนือลิ้งจะเปลี่ยนสีตัวหนังสือเป็นสีแสด*/
+        li.refer a:hover{
+            color: #ff322e;
+        }
+        .content{
+            margin-bottom: 2em;
+        }
+        .navbar-brand{
+            font-size: 2.25em;
+            padding: 0.5em 2em;
+        }
+        .nav-item{
+            font-size: 1.25em;
+            margin: 0.5em 1em;
+            padding: 0.5em 2em;
+        }
+        footer{
+            background-color: #101c2e;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <!-- พื้นหลังเป็นสีเทาอ่อน ให้ navbar ขยายให้เต็มความกว้างของหน้าต่างเบราว์เซอร์เมื่อหน้าจอมีขนาดใหญ่-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- หน้าจอจะขยายให้เต็มความกว้างของหน้าต่างเบราว์เซอร์ ทุกขนาดหน้าจอ -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./travel.html">Travel Blog</a>
+                <!-- กำหนดให้ปุ่ม navbar ให้ปุ่มนี้ควบคุมเนื้อหาของnavที่มี ID = #navbarNav ยุบและขยายเนื้อหาของnavbarที่มี ID = #navbarNav และใช้ปลั๊กอิน Bootstrap collapse เพื่อยุบและขยายเนื้อหาของnavbar ให้เนื้อหาของnavbarเริ่มต้นอยู่ในสถานะยุบ -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- เป็น icon ของปุ่ม nav -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- เมื่อเราย่อหน้าจอให้มีขนาดเล็ก เมนูจะถูกซ่อนไว้จนกว่าเราจะคลิกที่ปุ่มnavbar เพื่อขยายเนื้อหา มี margin ด้านซ้้ายเป็น 3rem -->
+                <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <!--บอกว่าลิงค์นี้ใช้งานอยู่ เป็นข้อความหนา-->
+                            <a class="nav-link active fw-bold" href="./travel.html">Travel</a> 
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background py-5 col-sm-12 col-md-12 col-lg-12">
+        <!-- ให้ข้อความอยู่ตรงกลาง เป็นสีขาว เปลี่ยนขนาดตัวอักษร  margin ทั้งสี่ด้านเป็น 0 -->
+        <p class="bg-tx text-center fs-1 m-0 text-white">Travel</p>
+    </div>
+    <!-- หน้าจอจะขยายให้เต็มความกว้างของหน้าต่างเบราว์เซอร์ทุกขนาดหน้าจอ padding ด้านซ้ายและด้านขวาเป็น 3rem -->
+    <div class="content container-fluid px-5">
+        <article>
+                <!-- margin และ padding ทั้งสี่ด้านเป็น 1rem และตัวหนังสืออยู่ตรงกลาง -->
+                <h3 class="my-3 p-3 text-center">เช็คอิน 10 ที่เที่ยวทะเลหมอกหนาวนี้ชวนแฟนไปกอดกัน</h3>
+                <!-- padding ทั้งสี่ด้านเป็น 1rem  -->
+                <p class="p-3">ลมหนาวมาเมื่อไร ใจฉันมันสุดเหงา หนาวนี้รีบหาคู่แล้วพากันขึ้นภูไปดูทะเลหมอกกันค่ะ วันนี้เราจะมาแนะนำที่เที่ยวดูทะเลหมอกสวยๆ นั่งรอดูพระอาทิตย์ขึ้นยามเช้าท่ามกลางสายลมหนาว และสำหรับใครที่ต้องการที่พักสุดหรู ในราคาถูกใจ ก็อย่าลืมจองที่พักกับ Traveloka ให้คุณได้ที่พักในราคาสุดพิเศษ ดูทะเลหมอกได้อย่างสบายใจ สบายกระเป๋า </p>
+                <!-- จัดให้เป็นแถว -->
+                <div class="row">
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็กและหน้าจอขนาดกลาง มีขนาดเท่ากับ 4 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./photo/ภูชี้ฟ้า.webp" class="card-img-top" alt="รูปภูชี้ฟ้า">
+                            <div class="card-body">
+                                <!-- margin ด้านบนเป็น 0.5rem margin ด้านล่างเป็น 1rem -->
+                              <h5 class="card-title mt-2 mb-3">1. ภูชี้ฟ้า เชียงรายจังหวัดกาญจนบุรี</h5>
+                              <p class="card-text">คงไม่มีใครไม่รู้จักสถานที่ดูทะเลหมอกยอดฮิตอย่างภูชี้ฟ้า ชะง่อนหินที่ยื่นออกไปจากหน้าผาเป็นแลนด์มาร์คสำคัญที่ทำให้ทุกคนที่ได้เห็นต้องรู้อย่างแน่นอนว่าเป็นที่ไหน ด้วยความสูงจากระดับน้ำทะเลปานกลาง 1,200 - 1,600 เมตร ทำให้มองเห็นทะเลหมอกได้ไกลสุดลูกหูลูกตาเป็นอีกที่ที่จะทำให้คุณพบเจอกับประสบการณ์สุดฟิน </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./photo/ดอยหลวง2-800x534.webp" class = "card-img-top" alt="รูปดอยหลวง">
+                            <div class="card-body">
+                              <h5 class="card-title">2. ดอยหลวง เชียงดาว เชียงใหม่</h5>
+                              <p class="card-text mt-2 mb-3">สถานที่ดูทะเลหมอก ตั้งเต๊นท์ จิบกาแฟชิลๆ ไปกับบรรยากาศของยอดเขาความสูง 2,225 เมตรจากระดับน้ำทะเลปานกลางแต่แนะนำสำหรับคนที่มีแรงปีนเขาได้แบบไม่ลำบากเพราะทางขึ้นดอยหลวงต้องเดิน เดิน และเดินเท่านั้น ดอยหลวงจะเปิดให้เข้าเฉพาะช่วงหน้าหนาวควรรีเช็คข้อมูลให้ดี แต่วิวท้องฟ้าตอนกลางคืนและทะเลหมอกในช่วงเช้านั้นรับรองว่าสวยประทับใจจนคุณไม่รู้ลืม </p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 4 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./photo/กิ่วแม่ปาน.png" class="card-img-top" alt="รูปกิ่วแม่ปาน">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">3. กิ่วแม่ปาน อุทยานแห่งชาติดอยอินทนนท์ จังหวัดเชียงใหม่</h5>
+                              <p class="card-text">สถานที่ถ่ายรูปและดูทะเลหมอกยอดฮิตใครที่เคยเห็นรูปวิวท้องฟ้า สูงจากระดับน้ำทะเลปานกลาง 2,000 เมตร นอกจากจะได้เห็นทะเลหมอกแล้วยังมีสถานที่ท่องเที่ยวบนดอยอินทนนท์ให้แวะตลอดทั้งทางไม่ว่าจะเป็นน้ำตก เส้นทางเดินป่า เอาใจสายธรรมชาติกันสุดๆ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 3 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="./photo/ดอยอ่างขาง2-800x534.webp" class="card-img-top" alt="รูปดอยอ่างขาง">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">4. ดอยอ่างขาง จังหวัดเชียงใหม่</h5>
+                              <p class="card-text">เป็นสถานีวิจัยการเกษตรที่ตั้งอยู่บนเทือกเขาตะนาวศรี สูงจากระดับน้ำทะเล 1,928 เมตร มีพื้นที่ให้ชมทะเลหมอกหลายจุด และมีอากาศหนาวเย็นตลอดทั้งปี นอกจากจะมีทะเลหมอกให้เที่ยวแล้วยังมีสถานที่ท่องเที่ยวเชิงเกษตรให้อีกหลายจุดให้เที่ยวชมอย่างจุใจ เหมาะสำหรับใครที่หาโลเคชั่นถ่ายรูปที่หลากหลายสวยถูกใจแน่นอน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็กและหน้าจอขนาดกลาง มีขนาดเท่ากับ  3 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-12 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="./photo/ภูทับเบิก.png" class="card-img-top" alt="รูปภูทับเบิก">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">5. ภูทับเบิก จังหวัดเพชรบูรณ์</h5>
+                              <p class="card-text">ถือเป็นอีกฟนึ่งสถานที่ท่องเที่ยวขึ้นชื่อของจังหวัดเพชรบูรณ์ เป็นยอดเขาที่สูงที่สุดในจังหวัดทำให้ได้รับความนิยมเป็นอย่างมาก นอกจากจะได้ชมความงามของทะเลหมอกแล้ว รอบๆ ภูทับเบิกก็มีคาร์เฟ่ ร้านอาหาร โรงแรมให้แวะเที่ยวได้ตลอดทางอิ่มหนำสำราญทั้งทริปแน่นอน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 3 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="./photo/ห้วยนำ้ดัง.png" class="card-img-top" alt="รูปห้วยน้ำดัง">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">6. ห้วยน้ำดัง จังหวัดเชียงใหม่</h5>
+                              <p class="card-text">อีกสถานที่หนึ่งในจังหวัดเชียงใหม่ที่ขึ้นชื่อ ใครที่อยากสัมผัสอากาศหนาว วิวสวย ๆ สามารถดูทะเลหมอกได้แบบพาโนรามาเราแนะนำที่นี่เลย นอกจากจะมีทะเลหมอกให้ชมแล้วยังมีสวนกาแฟแวะให้เที่ยว ทัศนียภาพจากห้วยน้ำดังจะสามารถมองเห็นดอยหลวงเชียงดาวยาวสุดลูกหูลูกตาน่าถ่ายรูปมากๆ วิวเต็มสิบให้ล้านเลย</p>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 3 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="./photo/ดอยเสมอดาว.png" class="card-img-top" alt="รูปดอยเสมอดาว">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">7. ดอยเสมอดาว จังหวัดน่าน</h5>
+                              <p class="card-text">จุดชมวิวที่สวยงามที่สุดแห่งหนึ่งของจังหวัดที่รายล้อมไปด้วยขุนเขาอย่างจังหวัดน่าน มีจุดให้ชมทั้งทะเลหมอก พระอาทิตย์ขึ้นพระอาทิตย์ตกอากาศเย็นสบายรายล้อมไปด้วยธรรมชาติ เปิดให้เข้าชมได้ตลอดทั้งปี แต่ในช่วงฤดูหนาวผู้คนก็หนาตา สำหรับคนที่ชอบความสดชื่นเย็นสบายไปเที่ยวฤดูฝนก็ยังโอเค ที่สำคัญยังมีมุมให้ถ่ายรูปเยอะมากๆ ทั้งลานดูดาว หรือเนินเขาที่ตัดกับขอบฟ้าถูกใจสายช่างภาพแน่นอน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็กและหน้าจอขนาดกลาง มีขนาดเท่ากับ 4 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./photo/ดอยแม่ระเมิง1-800x534.webp" class="card-img-top" alt="รูปดอยแม่ระเมิง">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">8. ดอยแม่ระเมิง จังหวัดตาก</h5>
+                              <p class="card-text">จุดชมวิวทะเลหมอกที่สวยที่สุดอยู่ที่ม่อนกิ่วลม สามารถมองเห็นวิวได้ 180 องศา ไม่จุดชมวิวแต่ทั้งดอยแม่ระเมิงเองก็มีสถานที่ท่องเที่ยงเชิงธรรมชาติอีกหลายจุด ทั้งน้ำตกชาวดอยที่ให้แวะเล่นก่อนที่จะไปสัมผัสบรรยากาศและความสวยงามของทะเลหมอกบนกิ่วแม่ลม </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 4 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4 ">
+                        <div class="card">
+                            <img src="./photo/ดอยผาชู้.png" class="card-img-top" alt="รูปดอยผาชู้">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">9. ดอยผาชู้ จังหวัดน่าน</h5>
+                              <p class="card-text">ยังอยู่กันที่จังหวัดน่านเพราะความเป็นเมืองแห่งขุนเขาไม่แปลกที่จะมีจุดให้ชมทะเลหมอกได้อย่างหลากหลาย ดอยผาชู้ตั้งอยู่บนพื้นที่อุทยานแห่งชาติศรีน่าน บนดอยมีพื้นที่สำหรับกางเต๊นท์และบ้านพักให้บริการ ทำให้คุณสามารถตื่นมาดูวิวทะเลหมอกยามเช้า ดื่มด่ำกับการมองเพราะอาทิตย์ขึ้น สัมผัสกับอากาศหนาวบนยอดดอย ใครที่ไปกับแฟนต้องฟินกันสุด ๆ  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ให้ div มีขนาดเท่ากับ 12 คอลัมน์เมื่อเป็นหน้าจอขนาดเล็ก มีขนาดเท่ากับ 6 ตอลัมน์เมื่อเป็นหน้าจอขนาดกลาง มีขนาดเท่ากับ 4 ตอลัมน์เมื่อเป็นหน้าจอขนาดใหญ่ padding ด้านล่างเป็น 1.5rem -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./photo/เนินช้างศึก.png" class="card-img-top" alt="รูปเนินช้างศึก">
+                            <div class="card-body">
+                              <h5 class="card-title mt-2 mb-3">10. เนินช้างศึก จังหวัดกาญจนบุรี</h5>
+                              <p class="card-text">ตั้งอยู่บนพื้นที่อุทยานแห่งชาติทองผาภูมิ เป็นจุดชมทะเลหมอกที่งดงามอีกแห่งหนึ่งของประเทศไทย โดยเป็นจุดที่สามารถมองเห็นทิวเขาในฝั่งประเทศพม่า บรรยากาศเย็นสบาย อีกหนึ่งไฮไลต์ของที่นี่คือวันไหนที่ฟ้าเปิดจะสามารถมองเห็นทะเลอันดามันฝั่งพม่าได้อีกด้วยเรียกได้ว่าเห็นได้ทั้งทะเลและภูเขาในที่เดียวเลย </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- padding ทั้ง 4 ด้านเป็น 1rem -->
+                <p class="p-3">และนี่คือสถานที่ไว้เที่ยวชมทะเลหมอกที่เราอยากจะมาแนะนำให้ทุกๆ คนบางทีก็ไปง่าย บางทีก็ต้องสมบุกสมบัน ผจญภัยกันบ้าง และถ้าใครที่วางแผนจะไปดูทะเลหมอกกันละก็ อย่าลืมจองที่พักกับ Traveloka ที่จะช่วยให้คุณได้ที่พักสุดพิเศษในราคาที่ถูกใจ มีส่วนลดให้ในทุกๆ ที่ให้สัมผัสอากาศหนาว สายหมอกและวิวสุดสวยอย่างสบายใจ สบายกระเป๋า</p>
+                <div class="rf">
+                    <!-- padding ด้านซ้ายและด้านขวาเป็น 1rem margin ทั้งสี่ด้านเป็น 0 และขีดเส้่นใจ้ข้อความ-->
+                    <h5 class="px-3 m-0 text-decoration-underline">อ้างอิง</h5>
+                    <ul>
+                        <!-- margin ทั้งสี่ด้านเป็น 1rem เมื่อกดลิ้งจะเปิด tab ใหม่ให้-->
+                        <li class="refer m-3"><a href="https://www.traveloka.com/th-th/explore/destination/check-in-10-foggy-sea-for-winter/51556" target="_blank">https://www.traveloka.com/th-th/explore/destination/check-in-10-foggy-sea-for-winter/51556</a> </li>
+                    </ul>
+                </div>
+        </article>
+    </div>
+    <footer>
+        <!-- จัดข้อความให้อยู่ตรงกลางหน้าจอ ตัวอักษรสีขาว -->
+        <div class="copyright text-center text-white">
+            <!-- margin ทั้งสี่ด้านเป็น 0 -->
+            <p class="m-0">Copyright &copy; 2023. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

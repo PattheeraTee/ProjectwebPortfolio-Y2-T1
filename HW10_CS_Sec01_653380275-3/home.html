@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @font-face {
+            font-family: 'Avenir';
+            src: url(./font/AvenirLTStd-Book.otf);
+        }
+        @font-face {
+            font-family: 'Kanit';
+            src: url(./font/Kanit-Regular.ttf);
+        }
+        *{
+            font-family: 'Avenir','Kanit',sans-serif;
+            margin: 0em;
+            padding: 0em;
+            line-height: 2em;
+            letter-spacing: 0.05em;
+            color: #032539;
+            box-sizing: border-box;
+        }
+        .logo h1{
+            font-size: 2em;
+        }
+        nav{
+            padding: 1.25em 7%;
+            min-width: 300px;
+        }
+        .head{
+            background:rgba(0,0,0,0.8) url(./photo/เรื่องน่ารู้เกี่ยวกับ-SEO-ในปี-2020.jpeg);
+            background-blend-mode: darken;
+            background-position: center;
+            background-size:cover;
+            padding: 10vh 0em;
+            min-width: 400px;
+        }
+        .head h2{
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Kanit';
+        }
+        .container-r{
+            width: 30%;
+            max-width: max-content;
+            margin-top: 1%;
+            margin-left: 2%;
+            
+            height: fit-content;
+            font-size: 1.15em;
+        }
+        .container-r h3{
+            text-transform: uppercase;
+        }
+        h3.container-r-item{
+            border-bottom: 2px dashed #fa991c ;
+        }
+        .container-r-item {
+            padding: 0em 0.5em;
+        }
+        .container-r-item li{
+            margin: 0.5em -2.5em -0.5em;
+            padding: 0.5em 0em;
+        }
+        .container-l{
+            width: 55%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            background-color: rgba(0,0,0,0.05);
+            padding: 0.5em 1em;
+            font-size: 1.15em;
+        }
+        .container-l h2{
+            padding: 0.5em 0.5em;
+            margin: 0.5em 0em 1em;
+            border-top: 2px solid #fa991c;
+            border-bottom: 2px solid #fa991c;
+            font-family: 'Kanit';
+            font-size: 1.75em;
+            text-transform: uppercase;
+        }
+        .container-l h3{
+            padding: 0.5em 0em;
+            text-transform: uppercase;
+        }
+        h3+p,h2+p{
+            text-indent: 1.5em;
+        }
+        .picture{
+            display: flex;
+            justify-content: center;
+            margin: 0.5em 0em;
+        }
+        .picture img{
+            box-shadow: 0px 0px 5px 2px darkgray;
+            border-radius: 10px;
+            width: 90%;
+        }
+        span a,ul li a{
+            text-decoration: none;
+            color: #1c768f;
+            word-wrap: break-word;
+        }
+        span a:hover,ul li a:hover{
+            color: #fa991c;
+            text-decoration: underline;
+        }
+        h3{
+            font-family: 'Kanit';
+            font-size: 1.35em;
+        }
+        ul{
+            margin: 0em 3.75em;
+        }
+        footer{
+            clear: both;
+            background-color: #032539;
+            text-align: center;
+            padding: 0.5em 0em;
+            min-width: 400px;
+        }
+        footer p{
+            color: white;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            min-width: 400px;
+        }
+        .writer{
+            display: flex;
+            align-items: center;
+            background-color: rgba(250, 153, 28,0.1);
+            padding: 1em 1.5em;
+            margin: 1.5em 0em 1em;
+            border-radius: 1em;
+            box-shadow: 0px 0px 5px 2px darkgray;
+        }
+        .writer p,.writer h4{
+            margin-left: 3%;
+        }
+        h4{
+            font-family: 'Kanit';
+            font-size: 1.25em;
+            font-weight: 900;
+        }
+        .writer img{
+            border-radius: 50%;
+            width: 8%;
+            min-width: 75px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+            padding: 1em 1em;
+        }
+        .icon img{
+            width: 10%;
+        }
+        div.icon a,.icon p{
+            margin-left:1em;
+            text-decoration: none;
+            color: #1c768f;
+            word-wrap: break-word;
+        }
+        .icon a:hover,.icon p:hover{
+            color: #fa991c;
+        }
+        .content-seo{
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 1em 0.5em 1em 0.5em;
+        }
+        .right-contact{
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 1em 0.5em 1em 0.5em;
+            margin-top: 2em;
+        }
+        
+        @media screen and (min-width:769px) and (max-width: 991px) {
+            .container-l{
+                width: 65%;
+                padding: 1em;
+            }
+            .container-r{
+                width: 25%;
+            }
+            .content-seo{
+                width: 100%;
+            }
+            .picture img{
+                width: 100%;
+            }
+            .contact{
+                display: flex;
+            }
+        } 
+
+        @media screen and (max-width: 768px){
+            .content{
+                flex-direction: column-reverse;
+            }
+            .container-l{
+                width: 100%;
+                padding: 1em;
+                font-size: 1em;
+                margin-bottom: 2%;
+            }
+            .container-l h2{
+                font-size: 1.5em;
+            }
+            h3.container-r-item{
+                margin: 0em 0.5em;
+            }
+            .container-r-item li{
+                margin: 0.5em -1em 0.5em;
+                padding: 0.25em 0em;
+            }
+            .container-r{
+                width: 100%;
+                padding: 1em 0em 0em;
+                font-size: 1em;
+                display: block;
+                margin: 1em auto;
+            }
+            .head h2{
+                font-size: 2em;
+            }
+            .picture img{
+                width: 95%;
+            }
+            h3{
+                font-size: 1.25em;
+            }
+        } 
+        
+    </style> -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>SEO</h1>
+        </div>
+    </nav>
+    <div class="head">
+        <h2>What Is SEO?</h2>
+    </div>
+    <div class="content">
+        <article class="container-l">
+            <h2>What Is SEO?</h2>
+            <p>What Is SEO?
+                SEO stands for “search engine optimization.” It is the process of getting traffic from
+                the “free,” “organic,” “editorial” or “natural” search results on search engines.
+                All major search engines such as 
+                <span><a href="https://searchengineland.com/library/platforms/google" target="_blank"> Google,</a></span>
+                <span><a href="https://searchengineland.com/library/microsoft/bing" target="_blank">Bing</a></span>
+                and
+                <span><a href="https://searchengineland.com/library/seo" target="_blank">Yahoo</a></span> 
+                have primary search
+                results, where web pages and other content such as videos or local listings are
+                shown and ranked based on what the search engine considers most relevant to
+                users. Payment isn’t involved, as it is with 
+                <span><a href="https://searchengineland.com/guide/what-is-paid-search" target="_blank">paid search ads.</a></span> 
+            </p>
+            <h3 id="beginner">More SEO Advice For Beginners</h3>
+            <p>For more basic but also in-depth advice, 
+                <span><a href="https://searchengineland.com/seotable" target="_blank">our Periodic Table Of SEO Success Factors</a></span>
+                , shown below, introduces you to all the key concepts you need to know:</p>
+            <div class="picture">
+                <img src="./photo/Picture1.png" alt="the periodic table of seo success factors">
+            </div>
+            <h3 id="land-guide">Search Engine Land’s Guide To SEO</h3>
+            <p>As a companion to the table, 
+            <span><a href="https://searchengineland.com/guide/what-is-seo" target="_blank">Search Engine Land’s Guide To SEO</a></span> 
+            explains the ranking factors in more depth, in a tutorial providing tips and advice on implementing them.</p>
+            <p>You can view a condensed version of the SEO Table explained in a quick presentation format here:</p>
+            <p>Links to the entire guide are shown below (start at the beginning, and each page will take you to the next):</p>
+            <ul>
+                <li><a href="https://searchengineland.com/guide/what-is-seo" target="_blank">Introduction: Search Engine Land’s Guide To SEO</a></li>
+                <li><a href="https://www.google.com/url?sa=D&q=http://searchengineland.com/guide/seo/types-of-search-engine-ranking-factors&ust=1694955840000000&usg=AOvVaw0KZu58TGRNR-IbPfn4dIGX&hl=en" target="_blank">Chapter 1: Types Of Search Engine Success Factors</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/content-search-engine-ranking" target="_blank">Chapter 2: Content & Search Engine Success Factors</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/html-code-search-engine-ranking" target="_blank">Chapter 3: HTML Code & Search Engine Success Factors</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/site-architecture-search-engine-ranking" target="_blank">Chapter 4: Site Architecture & Search Engine Success Factors</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/link-building-ranking-search-engines" target="_blank">Chapter 5: Link Building & Ranking In Search Engines</a></li>
+                <li><a href="https://searchengineland.com/guide/what-is-seo" target="_blank">Chapter 6: Social Media & Ranking In Search Results</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/trust-authority-search-rankings" target="_blank">Chapter 7: Trust, Authority & Search Rankings</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/personalization-search-engine-rankings" target="_blank">Chapter 8: Personalization & Search Engine Rankings</a></li>
+                <li><a href="https://searchengineland.com/guide/seo/violations-search-engine-spam-penalties" target="_blank">Chapter 9: Violations & Search Engine Spam Penalties</a></li>
+            </ul>
+            <h3 id="guideandbooks">More SEO Guides & Books</h3>
+            <p>Another excellent guide is Google’s “Search Engine Optimization Starter Guide.” This is a free PDF download that covers basic tips that Google provides to its own employees on how to get listed. You’ll find it 
+            <span><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en&visit_id=638305006729249461-3514013623&rd=1" target="_blank">here</a></span>. Also well worth checking out is Moz’s “Beginner’s Guide To SEO,” which you’ll find 
+            <span><a href="https://moz.com/beginners-guide-to-seo" target="_blank">here</a></span>, and the 
+            <span><a href="http://www.smallbusinesssem.com/the-seo-success-pyramid/971/" target="_blank">SEO Success Pyramid</a></span> from Small Business Search Marketing.</p>
+            <h3 id="daily">Daily SEO News & Expert SEO Advice</h3>
+            <p>In addition to daily news stories from our editorial staff, Search Engine Land publishes daily articles from expert contributors that cover SEO issues mainly from an in-the-trenches perspective. Browse the
+            <span><a href="https://searchengineland.com/library/seo" target="_blank">SEO Channel</a></span> for the most recent SEO news stories and expert columns, or sign up to 
+            <span><a href="https://searchengineland.com/newsletters" target="_blank">receive all of our SEO related content via email.</a></span></p>
+            <h3 id="library">Search Engine Land’s SEO Library</h3>
+            <p>The 
+            <span><a href="https://searchengineland.com/newsletters" target="_blank">SEO Library</a></span>  is an area within Search Engine Land that provides a collection of all stories we’ve written on the topic of SEO. We also have sub-categories, including:</p>
+            <ul>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Blocking Spiders</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Blogs & Feeds</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Cloaking & Doorway Pages</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Domain Names & URLs</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Duplicate Content</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Flash</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: General</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Image Search</a></li>
+                <li><a href="https://searchengineland.com/library/seo/local" target="_blank">SEO: Local</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Mobile Search</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Redirects & Moving Sites</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Spamming</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Submitting & Sitemaps</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Tagging</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Titles & Descriptions</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Video Search</a></li>
+                <li><a href="https://searchengineland.com/library/seo" target="_blank">SEO: Writing & Body Copy</a></li>
+            </ul>
+            <p>Also see our related 
+               <span><a href="https://searchengineland.com/library/seo/link-building" target="_blank">Link Building</a></span>
+               category and these sub-categories:</p>
+            <ul>
+                <li><a href="https://searchengineland.com/library/link-building/link-building-link-bombs" target="_blank">Link Building: Link Bombs</a></li>
+                <li><a href="https://searchengineland.com/library/link-building/link-building-linkbait" target="_blank">Link Building: Linkbait</a></li>
+                <li><a href="https://searchengineland.com/library/seo/link-building" target="_blank">Link Building: Paid Links</a></li>
+            </ul>
+            <p>In addition to covering SEO generally, Search Engine Land also has search engine optimization areas specifically for each of the major search engines:</p>
+            <ul>
+                <li><a href="https://searchengineland.com/library/google/google-seo" target="_blank">Google SEO</a></li>
+                <li><a href="https://searchengineland.com/library/bing/bing-seo" target="_blank">Yahoo SEO</a></li>
+                <li><a href="https://searchengineland.com/library/yahoo/yahoo-seo" target="_blank">Bing SEO</a></li> 
+            </ul>
+            <p>Also within our library is the 
+            <span><a href="https://searchengineland.com/library/how-to/how-to-seo">How To: SEO </a></span>section, which is devoted to practical tips and tactics about search engine optimization.</p>
+            <h3 id="newandadvice">Get SEO News & Advice Delivered To Your Inbox</h3>
+            <p>Subscribe to our <span><a href="https://searchengineland.com/newsletters" target="_blank">weekly SEO and daily SearchCap newsletters</a></span> for a recap of all the latest SEO related news, tips and tactics from Search Engine Land and other sources all over the Web.</p>
+            <h3 id="reference">Reference</h3>
+            <ul>
+                <li><a href="http://searchengineland.com/guide/what-is-seo" target="_blank">http://searchengineland.com/guide/what-is-seo</a></li>
+            </ul>
+            <div class="writer">
+                <img src="./photo/writer-338x338.jpg.webp" alt="writer">
+                <div>
+                    <h4>Danny Goodwin</h4>
+                    <p>Danny Goodwin has been Managing Editor of Search Engine Land & Search Marketing Expo – SMX since 2022. He joined Search Engine Land in 2022 as Senior Editor. </p>
+                </div>
+            </div>
+        </article>
+        <div class="container-r">
+            <div class="content-seo">
+                <h3 class="container-r-item">Content</h3>
+                <ul class="container-r-item">
+                    <li><a href="#beginner">More SEO advice for beginners</a></li>
+                    <li><a href="#land-guide">Search enigine land's guide to SEO</a></li>
+                    <li><a href="#guideandbooks">More SEO guides& books</a></li>
+                    <li><a href="#daily">Daily SEO news & expert SEO advice</a></li>
+                    <li><a href="#library">Search engine land's SEO library</a></li>
+                    <li><a href="#newandadvice">Get SEO news & advice delivered to your inbox</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </div>
+            <div class="right-contact">
+                <h3 class="container-r-item">Contact Me</h3>
+                <h3>Phone</h3>
+                <div id="phone" class="icon">
+                    <img src="./photo/bxs-phone.svg" alt="phone logo">
+                    <p>+66 xx-xxx-xxxx</p>
+                </div>
+                <h3>Address</h3>
+                <div id="address" class="icon">
+                    <img src="./photo/bxs-home.svg" alt="home logo">
+                    <a href="https://www.google.com/maps" target="_blank">Mueang Khon Kaen District, Khon Kaen 40000
+                    </a>
+                </div>
+                <h3>Instagram</h3>
+                <div id="ig" class="icon">
+                    <img src="./photo/bxl-instagram-alt.svg" alt="instagram logo">
+                    <a href="https://www.instagram.com/" target="_blank">_mpthr</a>
+                </div>
+                <h3>Facebook</h3>
+                <div id="fb" class="icon">
+                    <img src="./photo/bxl-facebook-square.svg" alt="facebook icon">
+                    <a href="https://www.facebook.com/" target="_blank">pathr tee</a>
+                </div>
+                <h3>Discord</h3>
+                <div id="dc" class="icon">
+                    <img src="./photo/bxl-discord-alt.svg" alt="discord logo">
+                    <a href="https://discord.com/" target="_blank">patherrr</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+</html>

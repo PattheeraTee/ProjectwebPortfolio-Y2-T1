@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favourite movie</title>
+    <style>
+        @font-face {
+            /* กำหนดแบบอักษร Kanit ที่ต้องการใช้ */
+            font-family: 'Kanit';
+            /* กำหนด URL ของแหล่งที่มาของแบบอักษรมาจาก Google Fonts */
+            src: url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+            /* กำหนดความหนาของแบบอักษรเป็น normal */
+            font-weight: normal;
+            /* กำหนดลักษณะของแบบอักษรเป็น normal */
+            font-style: normal;
+        }
+        *{
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านนอกกับวัตถุอื่นๆ */
+            margin: 0px;
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบ*/
+            padding: 0px;
+        }
+        header{
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบ*/
+            padding:2%;
+            display: flex;
+            align-items: center;
+            border-bottom: 0.1rem solid white;
+        }
+        h1{
+            text-shadow: 0.1em 0.1em 0.2em #d43736;
+        }
+        h2{
+            color:#d43736;
+        }
+        body{
+            font-family:Kanit,sans-serif;
+            color: white;
+            background-color: black;
+            letter-spacing: 0.0625rem;
+            font-size: 1rem;
+        }
+        header img{
+            /* กำหนดความกว้าง */
+            width: 4em;
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบทางด้านขวา*/
+            padding-right:2%;
+        }
+        .item1 img{
+            /* กำหนดความกว้าง */
+            width: 70%;
+            box-shadow: 0em 0em 1em white;
+            border-radius: 0.5rem;
+        }
+        article{
+            display:flex;
+            box-sizing: border-box;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านนอกกับวัตถุอื่นๆ */
+            padding:4%;
+            border-radius: 1rem; 
+            margin: 1.5rem 4rem 4rem 4rem;
+            background-color: #272727;
+        }
+        .item1{
+            /* กำหนดความกว้าง */
+            width: 30%;
+        }
+        .item2{
+            /* กำหนดความกว้าง */
+            width: 70%;
+        }
+        .item2 p{
+            text-indent: 5%;
+            /* จัดข้อความให้ชิดทั้งสองด้าน */
+            text-align: justify;
+        }
+        .section article div ul{
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบทางด้านซ้าย*/
+            padding-left: 0%;
+            /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบ*/
+            margin: 0%;
+        }
+        .section article div ul li{
+            display:inline;
+        }
+        article:hover{
+            transform: translateY(-10px);
+            background-color: #535252;
+        }
+        #movie{
+            /* กำหนดขนาดความสูงและความกว้างของตัวอักษร */
+            font-size: 2rem;
+             /* กำหนดระยะห่างระหว่างขอบของวัตถุด้านในกับวัตถุที่อยู่ภายใต้กรอบทางด้านบน*/
+            padding-top: 1rem;
+            /* จัดข้อความให้อยู่ตรงกลาง */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./photo/popcorn.png" alt="">
+        <h1>My favourite movies</h1>
+    </header>
+    <div id="movie">Movies </div>
+    <div class="section">
+        <article class="item">
+            <div class="item1">
+                <img src="./photo/w500.jpeg" alt="Kimetsu no Yaiba Entertainment District Arc"> 
+            </div>
+            <div class="item2">
+                <h2>Demon Slayer: Kimetsu no Yaiba Entertainment District Arc</h2> <br>
+                <ul>
+                    <li>Animation | </li>
+                    <li>Japanese | </li>
+                    <li>2021</li>
+                </ul><br>
+                <p>After completing their mission on the Mugen Train, Tanjiro and his friends are now on their next mission. Together with one of the highest-ranking swordsmen in the Demon Slayer Corps, Tengen Uzui the Sound Hashira, they head to the Entertainment District where the demons live. A new battle begins.</p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="item1">
+                 <img src="./photo/demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-dcbd5a.jpg.webp" alt="Kimetsu no Yaiba: To The Swordsmith Village">
+            </div>
+            <div class="item2">
+                <h2>Demon Slayer: Kimetsu no Yaiba To The Swordsmith Village</h2> <br>
+                <ul>
+                    <li>Animation | </li>
+                    <li>Japanese | </li>
+                    <li>2023</li>
+                </ul><br>
+                <p>The story goes to a new place ― Tanjiro sets off to the "Swordsmith Village." In the village, he meets the Hashiras, the strongest swordsmen of the Demon Slayer Corps. They are Muichiro Tokito the Mist Hashira and Mitsuri Kanroji the Love Hashira. As well as the shadows of creeping demons. A new battle is about to begin for Tanjiro and his friends.</p>            
+            </div>
+        </article>
+    </div>
+   
+</body>
+</html>
+

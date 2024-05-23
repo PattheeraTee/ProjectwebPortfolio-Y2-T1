@@ -1,0 +1,10 @@
+.box-1{
+    border: 20px solid blue;
+    padding: 20px;
+    margin: 2%;
+}
+.box-2{
+    background-color: #92bd53;
+    padding: 20px 30px 40px 10px;
+    border-radius: 20px;
+}

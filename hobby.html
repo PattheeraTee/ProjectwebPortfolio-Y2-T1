@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about-me.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <style>
+        [class ^= "post"]:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrap">
+        <div class="header">
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./photo/Logo-portfolio.svg" alt="portfolio logo">
+                </div>
+            </a>
+            <nav class="effect" id="myTopnav">
+                <ul>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./about-me.html" >About me</a></li>
+                    <li><a href="./hobby.html" class="active">My Hobby</a></li>
+                    <li><a href="./assignment.html">Assignment</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./about-me.html" >About me</a></li>
+                    <li><a href="./hobby.html" class="active">My Hobby</a></li>
+                    <li><a href="./assignment.html">Assignment</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <p class="head">My Hobby</p>
+    </div>
+<div class="blog">
+    <div class="post-hobby">
+        <div class="image-post">
+            <img src="./photo/3.svg" alt="until i found you photo">
+        </div>
+        <div class="detail">
+            <p>Listening music</p>
+        </div>
+    </div>
+    <div class="post-hobby">
+        <div class="image-post">
+            <img src="./photo/6.svg" alt="avengers endgame photo">
+        </div>
+        <div class="detail">
+            <p>Watching movies</p>
+        </div>
+    </div>
+    <div class="post-hobby">
+        <div class="image-post">
+            <img src="./photo/9.svg" alt="shadow and bone photo">
+        </div>
+        <div class="detail">
+            <p>Playing gamess</p>
+        </div>
+    </div>
+    <div class="post-hobby">
+        <div class="image-post">
+            <img src="./photo/harry-potter.jpeg" alt="harry potter photo">
+        </div>
+        <div class="detail">
+            <p>Reading novels </p>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <p class="head">My Favourite</p>
+    </div>
+        <div class="blog">
+            <article class="post1">
+                <div class="image-post">
+                    <img src="./photo/1.svg" alt="taeyeon photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite singer</h3>
+                    <p>Kim Taeyeon</p>
+                </div>
+            </article>
+            <article class="post2">
+                <div class="image-post">
+                    <img src="./photo/3.svg" alt="until i found you photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite song</h3>
+                    <p>Until I Found You</p>
+                </div>
+            </article>
+            <article class="post3">
+                <div class="image-post">
+                    <img src="./photo/5.svg" alt="howl's moving castle photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite anime</h3>
+                    <p>Howl's Moving Castle</p>
+                </div>
+            </article>
+            <article class="post4">
+                <div class="image-post">
+                    <img src="./photo/6.svg" alt="avengers endgame photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite movie</h3>
+                    <p>Avengers: Endgame</p>
+                </div>
+            </article>
+            <article class="post5">
+                <div class="image-post">
+                    <img src="./photo/8.svg" alt="shadow and bone photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite serie</h3>
+                    <p>Shadow and Bone</p>
+                </div>
+            </article>
+            <article class="post6">
+                <div class="image-post">
+                    <img src="./photo/harry-potter.jpeg" alt="harry potter photo">
+                </div>
+                <div class="detail">
+                    <h3>My favourite book</h3>
+                    <p>Harry Potter </p>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <p>This website portfolio is part of the course Web Design Technology</p>
+            <p>@2023 made by Pattheera Teerarujinont </p>
+        </footer>
+    
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+        
+    </script>
+</body>
+</html>

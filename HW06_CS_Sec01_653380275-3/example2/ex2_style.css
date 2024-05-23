@@ -1,0 +1,13 @@
+h1{
+    margin:10% 30%;
+    background-color: lightblue;
+    text-align: center;
+}
+p{
+    margin: 10%;
+    border: 3px solid red;
+    text-align: center;
+    background-color: yellow;
+    color: red;
+}
+    

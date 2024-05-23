@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.detail{
+    color: white;
+    text-align: center;
+    margin: 0em 32%;
+}
+.contain{
+    display: flex;
+}
+.right-contact,.left-contact{
+    width: 50%;
+    padding: 1em 7em;
+}
+.ip,#message{
+    font-size: 1.25em;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.3125em;
+}
+.right-contact p{
+    margin: 0.5em 0em;
+}
+.btn{
+    margin: 1em 0em 1em;
+}
+h2{
+    margin: 0em 0em 0.5em;
+}
+.left-contact .icon{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 1em;
+}
+.left-contact .icon img{
+    width: 10%;
+}
+.left-contact .icon a, .left-contact .icon p{
+    margin-left:1em;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+.left-contact .icon a:hover,.left-contact .icon p:hover{
+   color: #bb5a3a;
+}
+nav.menu ul li#p-contact a{
+    color: #bb5a3a;
+    font-weight: 600;
+}

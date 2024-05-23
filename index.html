@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home</title>
+            <link rel="stylesheet" href="index.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+            <style>
+                .btn h2{
+                    font-family: sans-serif !important;
+                }
+                footer{
+                    text-align: center;
+                    background-color: rgba(0,0,0,0.8);
+                    /* margin: -1.25em 0; */
+                    margin-top: 2em;
+                }
+                footer p{
+                    padding: 0.75em 0 0.5em;
+                }
+
+            </style>
+        </head>
+<body>
+    <div class="background"></div>
+    <div class="wrap">
+        <div class="header">
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./photo/Logo-portfolio.svg" alt="portfolio logo">
+                </div>
+            </a>
+            <nav class="effect" id="myTopnav">
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./about-me.html">About me</a></li>
+                    <li><a href="./hobby.html">My Hobby</a></li>
+                    <li><a href="./assignment.html">Assignment</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li><a href="./index.html" class="active">Home</a></li>
+                  <li><a href="./about-me.html">About me</a></li>
+                  <li><a href="./hobby.html">My Hobby</a></li>
+                  <li><a href="./assignment.html">Assignment</a></li>
+                  <li><a href="./experience.html">Experience</a></li>
+                </ul>
+              </div>
+
+        </div>
+        <div class="fade btn box" style="opacity: 1;">
+            <p class="first">Hi, Welcome to my Portfolio </p>
+            <h2>Pattheera Teerarujinont</h2>
+            <p class="ident">I am a college student studying at the College of Computing Khon Kaen University.
+                I'm 19 years old. I'm from Thailand. I love samoyed, basketball and listening to music.</p>
+            <button type="button" onclick="goToAboutPage()">About me</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p>This website portfolio is part of the course Web Design Technology</p>
+        <p>@2023 made by Pattheera Teerarujinont </p>
+    </footer>
+
+
+   
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+        function goToAboutPage() {
+            var url1 = "about-me.html";
+            window.location.href = url1;
+        }
+    </script>
+    <!-- FONT -->
+
+</body>
+
+</html>

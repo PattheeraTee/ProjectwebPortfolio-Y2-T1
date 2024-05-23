@@ -1,0 +1,140 @@
+html{
+    min-width: 300px;
+}
+.circle{
+    background: rgb(16, 16, 16);
+    background-color: rgb(255, 255, 255,0.2) ;
+    background: rgb(16, 16, 16,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em !important;
+    padding-bottom: 1.5em !important;
+}
+.skill-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-circle p{
+    margin-top: 0.5em;
+    margin-left: -1em;
+}
+.skill-left,.skill-right{
+    display: flex;
+}
+circle {
+    stroke-width: 0.5em;
+    fill: transparent;
+    stroke-linecap: round;
+    animation: load 4s;
+}
+@keyframes load {
+    0% {
+        stroke-dashoffset: 360;
+    }
+}
+a{
+    color: white !important;
+}
+.left-box img{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 2px groove white;
+    padding: 2%;
+    width: 100%;
+}
+.right-box h2{
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 0.09em;
+    text-shadow: 2px 3px 0px #898999;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+.box-about,.box-skill{
+    display: flex;
+    padding: 1.5em 3em;
+    background-color: black;
+    background: rgb(255, 255, 255,0.2) ;
+    background: rgb(16, 16, 16,0.8);
+    margin: 0 3em;
+    border-radius: 2em;
+}
+
+.left-box{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.right-box{
+    width: 65%;
+    padding: 1em 2em 1em 5em;
+}
+.container{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.container .head{
+    font-size: 3em;
+    font-family: serif;
+    text-align: center;
+    color: white;
+}
+.detail-about{
+    margin-bottom: 2em;
+}
+.left-about{
+    font-weight: 700;
+    color: #F9F871;
+}
+.detail-about span{
+    font-size: 1.15em;
+}
+.box-skill{
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px){
+    .box-about,.skill-left,.skill-right{
+        flex-direction: column;
+    }
+    .left-box{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .right-box{
+        width: 100%;
+        padding: 0;
+    }
+    .box-skill{
+        padding: 0;
+        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:0 10%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .skill-left,.skill-right{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .box-skill,.skill-left,.skill-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .head{
+        font-size: 2em;
+    }
+    .container{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+   
+}

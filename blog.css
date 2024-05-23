@@ -1,0 +1,135 @@
+.blog{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 5%;
+    flex-wrap: wrap;
+ }
+[class ^= "post"]{
+    width: 40%;
+    margin: 0 auto 8%;
+    background: black;
+    background: rgb(16, 16, 16,0.8);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+ }
+
+ .image-post img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 40vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 2px solid white;
+ }
+ /* .post2 .image-post img,.post3 .image-post img{
+     object-position:top;
+ } */
+.detail{
+    padding: 0em 1.5em;
+    border: 2px solid white;
+    border-top: none;
+    margin-top: -0.4em;
+
+}
+.detail h3{
+    padding-top: 0.75em;
+    font-size: 2em;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.detail p{
+    padding: 1em 0em;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+}
+.post-hobby .image-post img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 40vh;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border: 2px solid white;
+}
+
+
+/* .head-post{
+    margin: 2% 15% 0em;
+    font-size: 1.5em;
+} */
+html{
+    min-width: 300px;
+}
+@media screen and (max-width:1100px) {
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    [class ^= "post"]{
+        width: 80%;
+     }
+     .image-post img{
+        width: 100%;
+        height: 50vh;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border: 2px solid white;
+     }
+}
+@media screen and (max-width:700px) {
+    [class ^= "post"]{
+        width: 80%;
+     }
+     .image-post img{
+        height: 40vh;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border: 2px solid white;
+     }
+     .detail p{
+        font-size: 1.25em;
+    }
+    .detail h3{
+        font-size: 1.25em;
+    }
+}
+@media screen and (max-width:550px) {
+    [class ^= "post"]{
+        width: 80%;
+     }
+     .image-post img{
+        height: 30vh;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border: 2px solid white;
+     }
+     .detail p{
+        font-size: 1.15em;
+    }
+    .detail h3{
+        font-size: 1.35em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    [class ^= "post"]{
+        width: 80%;
+     }
+     .image-post img{
+        height: 20vh;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border: 2px solid white;
+     }
+     .detail p{
+        font-size: 1em;
+    }
+    .detail h3{
+        font-size: 1.25em;
+    }
+}

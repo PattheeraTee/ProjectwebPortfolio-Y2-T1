@@ -1,0 +1,76 @@
+
+.content{
+    display: flex;
+}
+h2{
+    padding: 0.5em 13%;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.home-about{
+    box-sizing: border-box;
+    width: 35%;
+    border-left: 2px solid ;
+    margin: 3em 0em;
+}
+.home-about p{
+    margin: 2em 13%;
+}
+.home-about img{
+    box-sizing: border-box;
+    display: block;
+    margin: 1.25em auto;
+    border: 2px solid black;
+    border-radius:20em;
+    width: 70%;
+}
+.container .head{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+.image-post{
+    width: 70%;
+    height: 33em;
+}
+.image-post img{
+    width: 20em;
+    height: 33em;
+    object-fit: cover;
+}
+article[class ^= "post"]{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0em 13% 5% 13%;
+    border: 2px solid black;
+}
+.home-blog{
+    width: 65%;
+    margin-bottom: 4em;
+}
+.detail{
+    padding:1.5em;
+}
+.detail h3{
+    padding-top: 1em;
+}
+.detail p{
+    padding: 1.5em 0em 0.5em 0em;
+}
+.container{
+    background: rgba(0,0,0,0.4) url(./photo/background.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size:cover;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+}
+.container .head{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+nav.menu ul li#p-home a{
+    color: #bb5a3a;
+    font-weight: 600;
+}

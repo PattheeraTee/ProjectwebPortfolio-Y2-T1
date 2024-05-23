@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Avenir',sans-serif;
+    line-height: 1.6em;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(./font/AvenirLTStd-Book.otf);
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    font-family: serif;
+    font-size: 2.25em;
+    padding: 0.5em 2em;
+}
+.menu ul li{ 
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em 1em;
+    padding: 0.5em 2em;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: sans-serif;
+} 
+.menu ul li:hover a{
+    color: #bb5a3a;
+} 
+.btn{
+    margin: 0em 13%;
+    padding: 0.5em 1.5em;
+    font-size: 1.25em;
+    background-color:#bb5a3a;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+}
+footer{
+    text-align: center;
+    background-color: #bb5a3a;
+}
+footer p{
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+}
+p{
+    font-size: 1.2em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.75em;
+}
+.container{
+    background: rgba(0,0,0,0.4) url(./photo/background.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size:cover;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.container .head{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}

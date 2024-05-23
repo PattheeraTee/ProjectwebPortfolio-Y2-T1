@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about-me.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <style>
+       
+        .box-about,.skill-left,.skill-right{
+            flex-direction: column;
+        }
+        .box-about{
+            margin-bottom: 3em;
+        }
+        .left-box{
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+        .left-box img{
+            border-radius: 50% !important;
+        }
+        .right-box{
+            width: 100%;
+            padding: 0;
+        }
+        footer{
+            text-align: center;
+            background-color: rgba(0,0,0,0.8);
+        }
+        footer p{
+            padding: 0.75em 0 0.5em;
+        }
+        /* span{
+            font-family: 'Marshmallow', sans-serif !important;
+        } */
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrap">
+        <div class="header">
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./photo/Logo-portfolio.svg" alt="portfolio logo">
+                </div>
+            </a>
+            <nav class="effect" id="myTopnav">
+                <ul>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./about-me.html" >About me</a></li>
+                    <li><a href="./hobby.html">My Hobby</a></li>
+                    <li><a href="./assignment.html">Assignment</a></li>
+                    <li><a href="./experience.html" class="active">Experience</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./about-me.html" >About me</a></li>
+                    <li><a href="./hobby.html">My Hobby</a></li>
+                    <li><a href="./assignment.html">Assignment</a></li>
+                    <li><a href="./experience.html" class="active">Experience</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <p class="head">Experience</p>
+    </div>
+    <div class="box-about">
+        <div class="left-box">
+            <img src="https://digitalmore.co/wp-content/uploads/2022/09/Cat-Memes-15.jpg" alt="cat hello">
+        </div>
+        <div class="right-box">
+            <div class="detail-about">
+                <span class="left-about">Suggestion :</span>
+                <span class="rignt-about">Increase time for projects and home and tell about various projects a large amount in advance or telling from beginning semester for we think about the project topic early.</span>
+            </div>
+            <div class="detail-about">
+                <span class="left-about">Impressive :</span>
+                <span class="right-about">The teacher taught very good. I can apply what I learn. Thank you for teaching us both knowledge and various experiences from teacher. And thank you very much to all TA's. Everyone are very kind.</span>
+            </div>
+            <div class="detail-about">
+                <span class="left-about">Mind :</span>
+                <span class="right-about">At first I really wanted to study this course out of all the courses. When I didn't get it, I was sad and shed tears.  I'm glad I studied. Even though the work is a little heavy. I chose to take this course because I thought that this subject would be the most useful and could be used in practice, and I still had no knowledge and had never written HTML and CSS before. After studying, I felt that I could work very slowly. There must be a lot of development in design and beauty. Overall, it's all fun. I was secretly a little stressed when I couldn't deliver the work on time. P.S. Teacher, during I did the quiz, please don't stare at me while answering the quiz. I'm nervous and afraid I can't answer correctly. T_T </span>            </div>
+            </div>
+            <div class="detail-about">
+                <span class="left-about">For everyone to read this website :</span>
+                <span class="right-about">My english is a little good. I am sorry if my grammar is incorrect and no meaning. I will improve my english. Thank you all of you to read my portfolio website </span>
+            </div>
+    </div>
+    <footer>
+        <p>This website portfolio is part of the course Web Design Technology</p>
+        <p>@2023 made by Pattheera Teerarujinont </p>
+    </footer>
+  
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.box{
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 0.9375em dotted red;
+    border-left: 0.9375em groove tomato;
+    border-right: 0.9375em  dashed pink;
+    border-bottom: 0.9375em  double blue;
+    padding-top: 1.875em;
+}
+
+ #image img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border: solid transparent;
+    border-image: url(./photo/image.png);
+    border-width: 3.125em 10.5em;
+    border-image-slice: 500;
+   
+}
